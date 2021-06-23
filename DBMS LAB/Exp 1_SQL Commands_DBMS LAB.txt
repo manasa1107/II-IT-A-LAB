@@ -1,0 +1,22 @@
+create database bus_reservation_system;
+use bus_reservation_system;
+show tables;
+create table Bus(busno int primary key, start_point varchar(20), end_point varchar(20));
+insert into Bus values(5229,"hyd","chennai"),(3219,"mumbai","hyd"),(7218,"hyd","mumbai");
+update Bus set end_point="mumbai" where end_point="chennai";
+select distinct start_point from Bus;
+alter table Bus add color varchar(3);
+update Bus set color="red";
+select * from Bus;
+
+create table Ticket(t_id int primary key, t_date varchar(20),t_amount int);
+insert into Ticket values(12345,"12/06/2021",1000),(67890,"30/06/2021",590),(45678,"3/07/2021",800);
+alter table Ticket change t_amount total int;
+select * from Ticket;
+
+create table passenger(p_id int primary key,p_name varchar(20),p_mbl varchar(10),p_email varchar(100),p_seatnum int);
+insert into passenger values(123,"manasa","12345","manasa@gmail.com",1),(456,"sreeja","98178","sreeja@gmail.com",2),(367,"bhavana","67089","bhavana@gmail.com",3);
+alter table passenger modify p_mbl int;
+delete from passenger where p_id = 123;
+alter table passenger drop p_seatnum;
+select * from passenger;

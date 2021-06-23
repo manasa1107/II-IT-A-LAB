@@ -1,0 +1,20 @@
+roll_num	name
+1	soumya
+ssn	emp_name	age
+1201	manasa	20
+1202	bhavana	18
+1203	sreeja	NULL
+1204	dhana	20
+event_id	event_name	coord_id
+101	Skit	1203
+102	Dance	1201
+103	Singing	1202
+ht_num	name
+1201	hanshitha
+1202	sreeya
+1203	Snigdha
+Tables_in_employee
+Employee
+Event
+Student
+Student1

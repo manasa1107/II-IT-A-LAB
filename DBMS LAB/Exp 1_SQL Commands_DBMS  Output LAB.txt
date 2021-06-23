@@ -1,0 +1,14 @@
+start_point
+hyd
+mumbai
+busno	start_point	end_point	color
+5229	hyd	mumbai	red
+3219	mumbai	hyd	red
+7218	hyd	mumbai	red
+t_id	t_date	total
+12345	12/06/2021	1000
+67890	30/06/2021	590
+45678	3/07/2021	800
+p_id	p_name	p_mbl	p_email
+456	sreeja	98178	sreeja@gmail.com
+367	bhavana	67089	bhavana@gmail.com

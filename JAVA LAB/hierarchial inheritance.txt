@@ -1,0 +1,28 @@
+class A{
+    public void sum(int a,int b){
+        System.out.println("a+b :"+(a+b));
+    }
+}
+class B extends A{
+    public void mult(int a,int b){
+        System.out.println("a*b :"+(a*b));
+    }
+}
+class C extends A{
+    public void sub(int a,int b){
+        System.out.println("a-b :"+(a-b));
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    C c = new C();
+	    c.sum(4,9);
+	    c.sub(8,3);
+	}
+}
+
+
+
+

@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the string : ");
+        String str = s.next();
+        int v=0, c=0;
+        int n = str.length();
+        for(int i=0; i<n; i++)
+        {
+            char ch = str.charAt(i);
+            if((ch == 'a') || (ch == 'e') || (ch == 'o') || (ch == 'i') || (ch == 'u'))
+            {
+                v++;
+            }
+            else if((ch == 'A') || (ch == 'E') || (ch == 'I') || (ch == 'O') || (ch == 'U'))
+            {
+                v++;
+            }
+            else
+            {
+                c++;
+            }
+        }
+        System.out.println("Vowel Count = " + v);
+        System.out.println("Consonant Count = " + c);
+    }
+}
+

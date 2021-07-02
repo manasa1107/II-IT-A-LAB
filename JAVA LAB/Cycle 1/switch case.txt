@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String args[])
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.print("enter the values of a and b : ");
+		int a = s.nextInt();
+		int b = s.nextInt();
+		System.out.println("Options : enter\n+ for addition\n- for subtraction\n* for multiplication\n/ for division\n% for mod operation\n");
+		System.out.print("enter your option : ");
+		char ch = s.next().charAt(0);
+		double ans;
+		switch(ch)
+		{
+			case '+':
+				a += b;
+				System.out.println(" a + b = " + a);
+				break;
+			case '-':
+				a -= b;
+				System.out.println("a - b = " + a);
+				break;
+			case '*':
+				a *= b;
+				System.out.println("a * b = " + a);
+				break;
+			case '/':
+				ans = a/ b;
+				System.out.println("a/b = " + ans);
+				break;
+			case '%':
+				a %= b;
+				System.out.println("a%b = " + a);
+				break;
+			default:
+				System.out.println("enter valid option");
+		}
+	}
+}
+
+
